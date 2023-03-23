@@ -1,8 +1,10 @@
 <template>
     <div class="projects container">
-        <div class="grid">
-          <div class="row" v-for="project in projects">
-            <ProjectComponent/>
+        <div class="container text-center">
+          <div class="row row-cols-3">
+            <div class="col" v-for="project in projects">
+              <ProjectComponent/>
+            </div>
           </div>
         </div>
     </div>
@@ -13,7 +15,7 @@ import ProjectComponent from '../components/ProjectComponent.vue'
 
 export default {
   setup () {
-    const projects = [0, 1, 2]
+    const projects = [0, 1, 2, 4]
     return { projects }
 
   },
